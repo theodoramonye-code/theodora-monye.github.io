@@ -4,74 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Governance Advisory — Capabilities Brochure | Theodora Monye</title>
-    <meta name="description" content="Practical AI Governance capabilities brochure by Theodora Monye. EU AI Act, ISO 42001, NIST AI RMF, risk management & responsible AI implementation.">
-    
+    <meta name="description" content="Independent AI governance advisory for regulated organisations. EU AI Act, ISO 42001, NIST AI RMF, risk management and responsible AI implementation.">
+
     <!-- Open Graph Meta Tags - Critical for LinkedIn -->
     <meta property="og:title" content="AI Governance Advisory — Capabilities Brochure | Theodora Monye">
-    <meta property="og:description" content="Practical AI Governance capabilities brochure by Theodora Monye. Covers EU AI Act compliance, ISO 42001, NIST AI RMF, risk management frameworks, and responsible AI services.">
+    <meta property="og:description" content="Independent AI governance advisory for regulated organisations — designed to hold up under regulatory scrutiny, audit, and board challenge.">
     <meta property="og:url" content="https://theodoramonye-code.github.io/theodora-monye.github.io/">
     <meta property="og:image" content="https://github.com/theodoramonye-code/theodora-monye.github.io/blob/main/brochure.png?raw=true">
     <meta property="og:type" content="website">
 
-    <!-- Optional but helpful for some platforms -->
+    <!-- Twitter/X Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI Governance Advisory — Capabilities Brochure | Theodora Monye">
-    <meta name="twitter:description" content="Practical AI Governance capabilities brochure by Theodora Monye. EU AI Act, ISO 42001, NIST AI RMF, risk management & responsible AI implementation.">
+    <meta name="twitter:description" content="Independent AI governance advisory for regulated organisations — designed to hold up under regulatory scrutiny, audit, and board challenge.">
     <meta name="twitter:image" content="https://github.com/theodoramonye-code/theodora-monye.github.io/blob/main/brochure.png?raw=true">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
+        *, *::before, *::after { box-sizing: border-box; }
+
         body {
-            font-family: system-ui, -apple-system, sans-serif;
+            font-family: 'Lato', system-ui, sans-serif;
             margin: 0;
             padding: 40px 20px;
-            background: #f8f9fa;
-            color: #1a1a1a;
-            line-height: 1.6;
+            background: #f0f2f5;
+            color: #2D3748;
+            line-height: 1.7;
         }
+
         .container {
-            max-width: 700px;
+            max-width: 620px;
             margin: 0 auto;
             background: white;
-            padding: 50px 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 56px 48px;
+            border-radius: 4px;
+            box-shadow: 0 4px 24px rgba(10, 36, 99, 0.08);
             text-align: center;
         }
-        h1 { font-size: 2.4rem; margin-bottom: 8px; }
-        h2 { color: #0a66c2; margin-top: 0; }
-        .download-btn {
-            display: inline-block;
-            background: #0a66c2;
-            color: white;
-            padding: 16px 36px;
-            font-size: 1.15rem;
-            text-decoration: none;
-            border-radius: 8px;
-            margin: 30px 0;
+
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 28px;
         }
-        .download-btn:hover {
-            background: #084f96;
+
+        .eyebrow-rule {
+            width: 28px;
+            height: 1.5px;
+            background: #00A9A5;
+        }
+
+        .eyebrow-text {
+            font-size: 11px;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #00A9A5;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #0A2463;
+            margin: 0 0 6px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #00A9A5;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin: 0 0 28px;
+        }
+
+        .description {
+            font-size: 1rem;
+            max-width: 480px;
+            margin: 0 auto 36px;
+            color: #4A5568;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #00A9A5;
+            color: white;
+            padding: 14px 36px;
+            font-size: 0.85rem;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: background 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            background: #0e6655;
+        }
+
+        .divider {
+            width: 48px;
+            height: 1px;
+            background: #E5E7EB;
+            margin: 48px auto 32px;
+        }
+
+        .attribution {
+            font-size: 0.85rem;
+            color: #9CA3AF;
+            line-height: 1.8;
+        }
+
+        .attribution strong {
+            color: #0A2463;
+            font-weight: 700;
+        }
+
+        .reg-strip {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .reg-item {
+            font-size: 10px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #9CA3AF;
+        }
+
+        .reg-sep {
+            color: #D1D5DB;
+            font-size: 10px;
         }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <h1>AI Governance Advisory</h1>
-        <h2>Capabilities Brochure</h2>
 
-        <p style="font-size: 1.15rem; max-width: 550px; margin: 25px auto;">
-            Practical frameworks for EU AI Act compliance, ISO 42001, NIST AI RMF, risk management, and responsible AI implementation.
+        <div class="eyebrow">
+            <div class="eyebrow-rule"></div>
+            <span class="eyebrow-text">AI Governance Advisory</span>
+            <div class="eyebrow-rule"></div>
+        </div>
+
+        <h1>Capabilities Brochure</h1>
+        <p class="subtitle">Theodora Monye</p>
+
+        <p class="description">
+            Independent AI governance advisory for regulated organisations — designed to hold up under regulatory scrutiny, audit, and board challenge.
         </p>
 
-        <a href="https://theodoramonye.com/brochure" class="download-btn">
-            View the Full Capabilities Brochure
+        <a href="https://theodoramonye.com/brochure" class="cta-btn">
+            View the Capabilities Brochure
         </a>
 
-        <p style="margin-top: 60px; color: #555;">
-            Prepared by <strong>Theodora Monye</strong><br>
-            Independent AI Governance Advisor
+        <div class="divider"></div>
+
+        <p class="attribution">
+            <strong>Theodora Monye</strong><br>
+            Independent AI Governance Advisor<br>
+            <span style="color: #00A9A5;">theodoramonye.com</span>
         </p>
+
+        <div class="reg-strip">
+            <span class="reg-item">EU AI Act</span>
+            <span class="reg-sep">·</span>
+            <span class="reg-item">ISO 42001</span>
+            <span class="reg-sep">·</span>
+            <span class="reg-item">NIST AI RMF</span>
+            <span class="reg-sep">·</span>
+            <span class="reg-item">UK AI Code of Practice</span>
+            <span class="reg-sep">·</span>
+            <span class="reg-item">GDPR</span>
+        </div>
+
     </div>
 </body>
 </html>
